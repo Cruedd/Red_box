@@ -7,7 +7,8 @@ public class GameManager : MonoBehaviour
     bool gamehasend = false;
     public float restartdelay = 1f;
     public GameObject complatelevelUI;
-    
+
+
     public void CompleteLevel()
     {
         complatelevelUI.SetActive(true);
