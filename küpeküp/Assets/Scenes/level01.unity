@@ -15,9 +15,9 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 1
-  m_FogColor: {r: 1, g: 1, b: 1, a: 1}
+  m_FogColor: {r: 0.4198113, g: 0.9472556, b: 1, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: 0.02
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -3537,6 +3537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fr2: {fileID: 580978491}
+  go2: {fileID: 580978487}
 --- !u!65 &983533127
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5464,7 +5465,7 @@ MonoBehaviour:
   Player: {fileID: 1520473310}
   "olmas\u0131gereken": -5
   bozukoldugundaneminolma: 5
-  time: 0
+  time: 1
 --- !u!114 &1520473312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7709,8 +7710,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2051543591}
-  - component: {fileID: 2051543593}
   - component: {fileID: 2051543592}
+  - component: {fileID: 2051543593}
   m_Layer: 0
   m_Name: start_floor_endroad
   m_TagString: Untagged
@@ -7767,11 +7768,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fr1: {fileID: 457400391}
-  fr2: {fileID: 580978491}
-  fr3: {fileID: 1147559556}
-  fr4: {fileID: 367024309}
-  fr5: {fileID: 792349427}
-  fr6: {fileID: 976504728}
+  fr2: {fileID: 1147559556}
+  fr3: {fileID: 367024309}
+  fr4: {fileID: 792349427}
+  fr5: {fileID: 976504728}
+  gf1: {fileID: 457400387}
+  gf2: {fileID: 1147559555}
+  gf3: {fileID: 367024308}
+  gf4: {fileID: 792349426}
+  gf5: {fileID: 976504727}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -63,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
         if (playerkordinaty < -olmasýgereken || playerkordinaty < olmasýgereken)
         {
             time += Time.deltaTime;
-            //Invoke("Pozistyondüzeltme", bozukoldugundaneminolma);
+            Invoke("Pozistyondüzeltme", bozukoldugundaneminolma);
             if (time > bozukoldugundaneminolma)
             {
 

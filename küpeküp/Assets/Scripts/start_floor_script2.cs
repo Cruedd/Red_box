@@ -5,6 +5,7 @@ using UnityEngine;
 public class start_floor_script2 : MonoBehaviour
 {
     [SerializeField] Transform  fr2;
+    [SerializeField] GameObject go2;
     private void OnTriggerEnter(Collider Other)
     {
 
@@ -13,7 +14,7 @@ public class start_floor_script2 : MonoBehaviour
             Transform parentTransform = transform.parent;
 
             fr2.position = parentTransform.position + parentTransform.forward * 61;
-
+            go2.active = true;
 
 
         }

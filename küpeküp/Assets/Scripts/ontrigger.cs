@@ -11,83 +11,82 @@ public class ontrigger : MonoBehaviour
 
         if (Other.CompareTag("Player"))
         {
-            int randomInt = Random.Range(0, 5);
-            Debug.Log("Rastgele Tam Sayý: " + randomInt);
+
             Transform parentTransform = transform.parent; // Ebeveyn objenin Transform bileþenini al
-            switch (randomInt)
+
+            while(true)
             {
+                int randomInt = Random.Range(0, 5);
+                Debug.Log("Rastgele Tam Sayý: " + randomInt);
+                switch (randomInt)
+                {
 
-                case 0:
-                    if(fro1.active == false)
-                    {
-                        fro1.SetActive(true);
-                        nextfloor(fr1, parentTransform);
-                    }
-                    else
-                    {
-                        return;
-                    }
-                    break;
+                    case 0:
+                        if (fro1.active == false)
+                        {
+                            Debug.Log("fr1 caðrýldý");
+                            fro1.SetActive(true);
+                            nextfloor(fr1, parentTransform);
+                            return;
+                        }
+
+                        break;
 
 
-                case 1:
-                    if (fro2.active == false)
-                    {
-                        fro2.SetActive(true);
-                        nextfloor(fr2, parentTransform);
-                    }
-                    else
-                    {
-                        return;
-                    }
-                    break;
+                    case 1:
+                        if (fro2.active == false)
+                        {
+                            Debug.Log("fr2 caðrýldý");
+                            fro2.SetActive(true);
+                            nextfloor(fr2, parentTransform);
+                            return;
+                        }
 
-                case 2:
-                    if (fro3.active == false)
-                    {
-                        fro3.SetActive(true);
-                        nextfloor(fr3, parentTransform);
-                    }
-                    else
-                    {
-                        return;
-                    }
-                    break;
-                case 3:
-                    if (fro4.active == false)
-                    {
-                        fro1.SetActive(true);
-                        nextfloor(fr4, parentTransform);
-                    }
-                    else
-                    {
-                        return;
-                    }
-                    break;
+                        break;
 
-                case 4:
-                    if (fro5.active == false)
-                    {
-                        fro1.SetActive(true);
-                        nextfloor(fr5, parentTransform);
-                    }
-                    else
-                    {
-                        return;
-                    }
-                    break;
-                case 5:
-                    if (fro6.active == false)
-                    {
-                        fro1.SetActive(true);
-                        nextfloor(fr6, parentTransform);
-                    }
-                    else
-                    {
-                        return;
-                    }
-                    break;
+                    case 2:
+                        if (fro3.active == false)
+                        {
+                            Debug.Log("fr3 caðrýldý");
+                            fro3.SetActive(true);
+                            nextfloor(fr3, parentTransform);
+                            return;
+                        }
+
+                        break;
+                    case 3:
+                        if (fro4.active == false)
+                        {
+                            Debug.Log("fr4 caðrýldý");
+                            fro4.SetActive(true);
+                            nextfloor(fr4, parentTransform);
+                            return;
+                        }
+
+                        break;
+
+                    case 4:
+                        if (fro5.active == false)
+                        {
+                            Debug.Log("fr5 caðrýldý");
+                            fro5.SetActive(true);
+                            nextfloor(fr5, parentTransform);
+                            return;
+                        }
+
+                        break;
+                    case 5:
+                        if (fro6.active == false)
+                        {
+                            Debug.Log("fr1 caðrýldý");
+                            fro6.SetActive(true);
+                            nextfloor(fr6, parentTransform);
+                            return;
+                        }
+                        break;
+                }
             }
+
 
 
 
